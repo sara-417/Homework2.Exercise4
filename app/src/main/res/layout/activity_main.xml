@@ -16,17 +16,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="409dp"
-            android:layout_height="343dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="1dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@drawable/redlight" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/redlightView"
+                android:layout_width="409dp"
+                android:layout_height="343dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="1dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/redlight" />
+
+            <ImageView
+                android:id="@+id/greenlightView"
+                android:layout_width="409dp"
+                android:layout_height="343dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="1dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/greenlight" />
+
+            <ImageView
+                android:id="@+id/yellowlightView"
+                android:layout_width="409dp"
+                android:layout_height="343dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="1dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/yellowlight" />
+        </FrameLayout>
 
     </LinearLayout>
 
